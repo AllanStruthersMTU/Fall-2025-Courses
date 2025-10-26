@@ -1,0 +1,280 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10787,        272]
+NotebookOptionsPosition[      8982,        231]
+NotebookOutlinePosition[      9693,        253]
+CellTagsIndexPosition[      9650,        250]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   FrameBox[GridBox[{
+      {
+       StyleBox["Name",
+        FontSize->18], 
+       StyleBox[
+        "                                                                     \
+     ",
+        FontSize->18]}
+     }]], TraditionalForm]],ExpressionUUID->
+  "a755cf8b-48b8-426b-9ec6-e5f528b8a8fd"],
+ " "
+}], "Title",
+ CellChangeTimes->{{3.9645161932290115`*^9, 3.9645162715191965`*^9}, {
+  3.9689220309408703`*^9, 3.968922040708969*^9}, {3.9699502041055984`*^9, 
+  3.9699502095005326`*^9}},ExpressionUUID->"7fd4ccc4-2df5-478f-aa96-\
+ee55f77476ca"],
+
+Cell[" ", "Text",
+ CellChangeTimes->{{3.9689252050506372`*^9, 3.9689253372326636`*^9}, {
+  3.96892536849667*^9, 3.9689253689294295`*^9}, {3.9689266491685333`*^9, 
+  3.9689266921901455`*^9}, {3.9689268789135723`*^9, 3.968926887231181*^9}, {
+  3.9694418019762745`*^9, 3.9694418160711036`*^9}, {3.9699504354497566`*^9, 
+  3.969950447916564*^9}, {3.96995093795432*^9, 
+  3.9699509481537433`*^9}},ExpressionUUID->"0bf32112-6876-4808-92f5-\
+d892773f6fd4"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The ODE for a tank system is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"y", "'"}], "=", 
+    RowBox[{"A", " ", "y"}]}], TraditionalForm]],ExpressionUUID->
+  "1e43cef6-7f25-45f1-8afd-f0526bad9ed0"],
+ " with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "=", 
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{"-", 
+         FractionBox["5", "10"]}], 
+        FractionBox["1", "20"]},
+       {
+        FractionBox["5", "10"], 
+        RowBox[{"-", 
+         FractionBox["5", "20"]}]}
+      }], ")"}]}], TraditionalForm]],ExpressionUUID->
+  "950286a6-060d-4de6-ab48-648cb7fde123"],
+ ".",
+ "\n",
+ "Sketch a possible tank system.",
+ "\n",
+ "Compute the two exponential decay rates of the system"
+}], "Item",
+ CellChangeTimes->{{3.969441831919463*^9, 3.9694418619685907`*^9}, {
+   3.969441939278076*^9, 3.9694419577278614`*^9}, {3.969442006353016*^9, 
+   3.9694420069986324`*^9}, {3.9699502173413615`*^9, 
+   3.9699502294685106`*^9}, {3.9699509521705933`*^9, 3.9699509690361085`*^9}, 
+   3.9699511191733665`*^9, {3.969951217647865*^9, 3.969951252939571*^9}, {
+   3.9699512829726343`*^9, 3.9699514586469574`*^9}, {3.969951571495902*^9, 
+   3.969951788404578*^9}, {3.9699522135636873`*^9, 3.969952231179265*^9}, {
+   3.970492922537777*^9, 3.9704929315893655`*^9}, {3.970492989438308*^9, 
+   3.970493101256338*^9}, {3.970493151169793*^9, 3.9704931587289157`*^9}, {
+   3.9704931894709783`*^9, 3.970493226014968*^9}, {3.9704932734849257`*^9, 
+   3.970493283406103*^9}, 3.9704935141776676`*^9, {3.9704936070488014`*^9, 
+   3.9704936070488014`*^9}},ExpressionUUID->"0fdeb834-b614-47ec-a5b6-\
+d711a9234afd"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.969441965223477*^9, 3.9694419662623444`*^9}, {
+  3.9699518091205373`*^9, 
+  3.9699518135413704`*^9}},ExpressionUUID->"ecec7fbf-8153-40db-b62c-\
+6a0c57afd66e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The ODE for a tank system is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"y", "'"}], "=", 
+    RowBox[{"A", " ", "y"}]}], TraditionalForm]],ExpressionUUID->
+  "b3c21e61-b619-4a3b-bd05-7d19bfa86bb9"],
+ " with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "=", 
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{"-", 
+         FractionBox["5", "20"]}], 
+        FractionBox["2", "10"]},
+       {
+        FractionBox["5", "20"], 
+        RowBox[{"-", 
+         FractionBox["5", "10"]}]}
+      }], ")"}]}], TraditionalForm]],ExpressionUUID->
+  "b6f9339b-c81b-47de-b397-5a8f7951b70b"],
+ ".\nSketch a possible tank system.\nCompute the exponential decay rates of \
+the system"
+}], "ItemNumbered",
+ CellChangeTimes->{{3.969441831919463*^9, 3.9694418619685907`*^9}, {
+   3.969441939278076*^9, 3.9694419577278614`*^9}, {3.969442006353016*^9, 
+   3.9694420069986324`*^9}, {3.9699502173413615`*^9, 
+   3.9699502294685106`*^9}, {3.9699509521705933`*^9, 3.9699509690361085`*^9}, 
+   3.9699511191733665`*^9, {3.969951217647865*^9, 3.969951252939571*^9}, {
+   3.9699512829726343`*^9, 3.9699514586469574`*^9}, {3.969951571495902*^9, 
+   3.969951788404578*^9}, {3.9699522135636873`*^9, 3.969952231179265*^9}, {
+   3.970492922537777*^9, 3.9704929315893655`*^9}, {3.970492989438308*^9, 
+   3.970493101256338*^9}, {3.970493151169793*^9, 3.9704931587289157`*^9}, {
+   3.9704931894709783`*^9, 3.970493226014968*^9}, {3.9704932734849257`*^9, 
+   3.970493283406103*^9}, {3.97049354450465*^9, 3.9704935529918237`*^9}, {
+   3.970493585337301*^9, 3.9704935970754766`*^9}, {3.97049363934171*^9, 
+   3.9704936722282495`*^9}},ExpressionUUID->"3fbf77e3-82bf-4265-85e6-\
+4657b10f9cfa"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.969441965223477*^9, 3.9694419662623444`*^9}, {
+  3.9699518091205373`*^9, 
+  3.9699518135413704`*^9}},ExpressionUUID->"bceffbb2-4c01-4abb-a2e6-\
+d0da02b14ceb"]
+}, Open  ]],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"3d3ce448-30d8-463b-aa23-a32eea6f4ea3"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Write down the ODE for the LRC circuit with no voltage source. Write the ODE \
+as a first order system and compute the eigenvalues.\
+\>", "Item",
+ CellChangeTimes->{{3.969441831919463*^9, 3.9694418619685907`*^9}, {
+   3.969441939278076*^9, 3.9694419577278614`*^9}, {3.969442006353016*^9, 
+   3.9694420069986324`*^9}, {3.9699502173413615`*^9, 
+   3.9699502294685106`*^9}, {3.9699509521705933`*^9, 3.9699509690361085`*^9}, 
+   3.9699511191733665`*^9, {3.969951217647865*^9, 3.969951252939571*^9}, {
+   3.9699512829726343`*^9, 3.9699514586469574`*^9}, {3.969951571495902*^9, 
+   3.969951788404578*^9}, {3.9699522135636873`*^9, 3.969952231179265*^9}, {
+   3.970492922537777*^9, 3.9704929315893655`*^9}, {3.970492989438308*^9, 
+   3.970493101256338*^9}, {3.970493151169793*^9, 3.9704931587289157`*^9}, {
+   3.9704931894709783`*^9, 3.970493226014968*^9}, {3.9704932734849257`*^9, 
+   3.970493283406103*^9}, 3.9704935141776676`*^9, {3.9704936070488014`*^9, 
+   3.9704936070488014`*^9}, {3.9704937021026864`*^9, 
+   3.9704937797194433`*^9}},ExpressionUUID->"8060dd90-aefb-41c3-af46-\
+84bcae61c405"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.969441965223477*^9, 3.9694419662623444`*^9}, {
+  3.9699518091205373`*^9, 
+  3.9699518135413704`*^9}},ExpressionUUID->"df0df308-4632-4f97-b0bb-\
+246f30421f0f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Solve ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"y", "'"}], "+", "y"}], "=", 
+    SuperscriptBox["y", "3"]}], TraditionalForm]],ExpressionUUID->
+  "49ad97a2-9afe-4caa-994d-c45f7bd20111"]
+}], "ItemNumbered",
+ CellChangeTimes->{{3.969441831919463*^9, 3.9694418619685907`*^9}, {
+  3.969441939278076*^9, 3.9694419577278614`*^9}, {3.9694419924829245`*^9, 
+  3.969442030590208*^9}, {3.969950235431782*^9, 3.9699502683206177`*^9}, {
+  3.969950334889432*^9, 3.9699503445101223`*^9}, {3.9699511395363083`*^9, 
+  3.969951140771985*^9}, {3.969954485162258*^9, 
+  3.9699544947484627`*^9}},ExpressionUUID->"3bf8a340-0727-45b5-a8ef-\
+440d7556900f"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.969441965223477*^9, 3.9694419662623444`*^9}, {
+  3.9694423053247604`*^9, 
+  3.969442320363761*^9}},ExpressionUUID->"3ca19f37-4fe3-436f-8eca-\
+5f5be5943abd"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->{"RulerBar", "MultipurposeBar"},
+WindowSize->{1098, 550.5},
+WindowMargins->{{Automatic, -1869.5}, {Automatic, -325.5}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]]}, Visible -> False, 
+  FrontEndVersion -> "13.3 for Microsoft Windows (64-bit) (July 24, 2023)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+ExpressionUUID->"6491ef6b-7e0f-4318-854c-33ee81dbd060"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 584, 18, 114, "Title",ExpressionUUID->"7fd4ccc4-2df5-478f-aa96-ee55f77476ca"],
+Cell[1167, 42, 449, 7, 35, "Text",ExpressionUUID->"0bf32112-6876-4808-92f5-d892773f6fd4"],
+Cell[CellGroupData[{
+Cell[1641, 53, 1623, 41, 104, "Item",ExpressionUUID->"0fdeb834-b614-47ec-a5b6-d711a9234afd"],
+Cell[3267, 96, 454, 8, 219, "Input",ExpressionUUID->"ecec7fbf-8153-40db-b62c-6a0c57afd66e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3758, 109, 1681, 39, 104, "ItemNumbered",ExpressionUUID->"3fbf77e3-82bf-4265-85e6-4657b10f9cfa"],
+Cell[5442, 150, 454, 8, 219, "Input",ExpressionUUID->"bceffbb2-4c01-4abb-a2e6-d0da02b14ceb"]
+}, Open  ]],
+Cell[5911, 161, 99, 1, 4, "PageBreak",ExpressionUUID->"3d3ce448-30d8-463b-aa23-a32eea6f4ea3",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[6035, 166, 1100, 17, 32, "Item",ExpressionUUID->"8060dd90-aefb-41c3-af46-84bcae61c405"],
+Cell[7138, 185, 454, 8, 219, "Input",ExpressionUUID->"df0df308-4632-4f97-b0bb-246f30421f0f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7629, 198, 677, 16, 32, "ItemNumbered",ExpressionUUID->"3bf8a340-0727-45b5-a8ef-440d7556900f"],
+Cell[8309, 216, 645, 11, 371, "Input",ExpressionUUID->"3ca19f37-4fe3-436f-8eca-5f5be5943abd"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
