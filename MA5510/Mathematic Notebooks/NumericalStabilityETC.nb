@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1207636,      21723]
+NotebookDataLength[   1207641,      21723]
 NotebookOptionsPosition[   1200583,      21603]
-NotebookOutlinePosition[   1201047,      21621]
-CellTagsIndexPosition[   1201004,      21618]
+NotebookOutlinePosition[   1201052,      21621]
+CellTagsIndexPosition[   1201009,      21618]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21601,8 +21601,8 @@ In practice ODE solvers control the local \[OpenCurlyDoubleQuote]one-step\
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1039.8, 574.8},
-WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowSize->{1039.5, 575},
+WindowMargins->{{Automatic, -1355}, {Automatic, -236}},
 TaggingRules-><|"TryRealOnly" -> False|>,
 Magnification->1.25,
 FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
