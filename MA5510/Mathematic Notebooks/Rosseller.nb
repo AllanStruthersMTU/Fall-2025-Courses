@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3755619,      62712]
-NotebookOptionsPosition[   3752163,      62652]
-NotebookOutlinePosition[   3752629,      62670]
-CellTagsIndexPosition[   3752586,      62667]
+NotebookDataLength[   3755647,      62713]
+NotebookOptionsPosition[   3752191,      62653]
+NotebookOutlinePosition[   3752657,      62671]
+CellTagsIndexPosition[   3752614,      62668]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -36669,7 +36669,7 @@ Cell[BoxData[{
   3.96900604319211*^9, 3.969006305300751*^9}, {3.96901697800126*^9, 
   3.9690169809222097`*^9}},
  CellLabel->
-  "In[200]:=",ExpressionUUID->"eae6af65-675b-4e31-8d30-0581de1f8122"],
+  "In[178]:=",ExpressionUUID->"eae6af65-675b-4e31-8d30-0581de1f8122"],
 
 Cell[BoxData[
  TabViewBox[{{1,"\<\"start\"\>"->
@@ -54707,7 +54707,7 @@ HZ/pqIv4oSV6TAD3N5qxcQmWgnfMuxsi7XR06Cb9r/4mAVz5Tkjt6KFSeP9E
 WWT4Gx3tUHbYbjfHjy9VGmc7RpWCxkdl79I+OlJybaYereHHkqaRRZtqSuGe
 zbEi39909E+ytELrDj9O/quLn3G8gv8BiDFL1A==
         "]]},
-      Annotation[#, "Charting`Private`Tag$76931#1"]& ]}, {}},
+      Annotation[#, "Charting`Private`Tag$59768#1"]& ]}, {}},
    Axes->True,
    DisplayFunction->Identity,
    FaceGridsStyle->Automatic,
@@ -59505,7 +59505,7 @@ yaSgBp/dmqtkXqbDfxxojqGh2njzdQ8qKUj+zIOypsZ0+DEjGb8jjIb2FNl2
 h/6ioCmNdI7AhnS4+cgk2S+QhrheKTv6s7AgXZuXK6L16XDfxca02ouGLkXO
 PbkuzYLOKA3di/qSDv8D+TO38Q==
         "]]},
-      Annotation[#, "Charting`Private`Tag$76956#1"]& ]}, {}},
+      Annotation[#, "Charting`Private`Tag$59796#1"]& ]}, {}},
    Axes->True,
    DisplayFunction->Identity,
    FaceGridsStyle->Automatic,
@@ -60138,9 +60138,10 @@ g9gVsNEA01wx/3/5656hD7rt/l+iQXV0\
    3.969005233248629*^9, 3.9690052432490067`*^9}, 3.9690059712887087`*^9, 
    3.9690060808618245`*^9, {3.969006113663558*^9, 3.969006142692115*^9}, 
    3.9690061756565895`*^9, {3.969006206623644*^9, 3.9690063065215654`*^9}, 
-   3.969006918610985*^9, 3.969016827676016*^9, 3.969016986030344*^9},
+   3.969006918610985*^9, 3.969016827676016*^9, 3.969016986030344*^9, 
+   3.9714426966982007`*^9},
  CellLabel->
-  "Out[206]=",ExpressionUUID->"57913036-5793-4afe-ac25-1837a596b44d"]
+  "Out[184]=",ExpressionUUID->"f50cf06b-29de-49d7-89c1-4ccb60067f5e"]
 }, Open  ]],
 
 Cell["We can estimate the period numerically! ", "Text",
@@ -62703,15 +62704,15 @@ Cell[2180350, 36482, 637, 12, 187, "Text",ExpressionUUID->"af898a3f-ec9f-48e9-b3
 Cell[2180990, 36496, 410, 8, 101, "Text",ExpressionUUID->"b0bf8412-1419-49f4-9013-4323b37570b5"],
 Cell[CellGroupData[{
 Cell[2181425, 36508, 5686, 163, 416, "Input",ExpressionUUID->"eae6af65-675b-4e31-8d30-0581de1f8122"],
-Cell[2187114, 36673, 1420977, 23469, 617, "Output",ExpressionUUID->"57913036-5793-4afe-ac25-1837a596b44d"]
+Cell[2187114, 36673, 1421005, 23470, 617, "Output",ExpressionUUID->"f50cf06b-29de-49d7-89c1-4ccb60067f5e"]
 }, Open  ]],
-Cell[3608106, 60145, 233, 4, 43, "Text",ExpressionUUID->"971c535e-8342-4916-a6ba-836fe04198ea"],
+Cell[3608134, 60146, 233, 4, 43, "Text",ExpressionUUID->"971c535e-8342-4916-a6ba-836fe04198ea"],
 Cell[CellGroupData[{
-Cell[3608364, 60153, 987, 24, 63, "Input",ExpressionUUID->"370d7073-9861-49f8-a5f4-2920951dcd0a"],
-Cell[3609354, 60179, 119038, 2011, 287, "Output",ExpressionUUID->"2139a919-44f9-4614-87b4-828b88bb2937"],
-Cell[3728395, 62192, 21772, 401, 293, "Output",ExpressionUUID->"336f3f4d-0427-4342-bdbf-69b786c16f12"]
+Cell[3608392, 60154, 987, 24, 63, "Input",ExpressionUUID->"370d7073-9861-49f8-a5f4-2920951dcd0a"],
+Cell[3609382, 60180, 119038, 2011, 287, "Output",ExpressionUUID->"2139a919-44f9-4614-87b4-828b88bb2937"],
+Cell[3728423, 62193, 21772, 401, 293, "Output",ExpressionUUID->"336f3f4d-0427-4342-bdbf-69b786c16f12"]
 }, Open  ]],
-Cell[3750182, 62596, 1953, 52, 360, "Text",ExpressionUUID->"6eb5da47-ed8a-4697-8afb-4cb13e16c592"]
+Cell[3750210, 62597, 1953, 52, 360, "Text",ExpressionUUID->"6eb5da47-ed8a-4697-8afb-4cb13e16c592"]
 }, Open  ]]
 }, Open  ]]
 }
