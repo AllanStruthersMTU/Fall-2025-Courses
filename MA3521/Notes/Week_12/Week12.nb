@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    508740,       9236]
-NotebookOptionsPosition[    502750,       9129]
-NotebookOutlinePosition[    503491,       9152]
-CellTagsIndexPosition[    503448,       9149]
+NotebookDataLength[    512495,       9330]
+NotebookOptionsPosition[    506275,       9219]
+NotebookOutlinePosition[    507016,       9242]
+CellTagsIndexPosition[    506973,       9239]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -8862,8 +8862,7 @@ Cell[TextData[{
        {
         RowBox[{"-", "2"}]},
        {"1"}
-      }], ")"}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+      }], ")"}]}], TraditionalForm]],ExpressionUUID->
   "23fbba7e-4023-41bb-878e-c699d5da3074"],
  " and ",
  Cell[BoxData[
@@ -8873,8 +8872,7 @@ Cell[TextData[{
     RowBox[{"(", GridBox[{
        {"1"},
        {"0"}
-      }], ")"}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+      }], ")"}]}], TraditionalForm]],ExpressionUUID->
   "973365fa-0d37-4a92-b500-f95c71f86ecd"],
  " and the general solution is \n\t",
  Cell[BoxData[
@@ -8923,8 +8921,7 @@ Cell[TextData[{
        RowBox[{"t", "(", GridBox[{
           {"1"},
           {"0"}
-         }], ")"}]}]}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+         }], ")"}]}]}]}]}], TraditionalForm]],ExpressionUUID->
   "6d8a2026-2358-49c1-9db3-27bf4c92c21f"],
  "\nWe might only care about\n\t",
  Cell[BoxData[
@@ -8943,15 +8940,108 @@ Cell[TextData[{
        RowBox[{"1", "+", "t"}], ")"}], 
       SuperscriptBox["e", 
        RowBox[{"-", "t"}]]}], "-", "2", "+", "t"}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "ce03d62a-34bb-4871-aaa9-87a9584d19be"],
- " \nThe last set of topics are how to solve higher order constant \
-coefficient linear ODEs directly without converting them to a system! This is \
-Chapter 4.  "
+  ExpressionUUID->"ce03d62a-34bb-4871-aaa9-87a9584d19be"],
+ " \nPeople would describe this as two decaying transients and a linearly \
+growing particular solution. "
 }], "Text",
- CellChangeTimes->{{3.9717841740222187`*^9, 
-  3.9717845403068056`*^9}},ExpressionUUID->"dd121e0b-2d10-4ba9-929d-\
+ CellChangeTimes->{{3.9717841740222187`*^9, 3.9717845403068056`*^9}, {
+  3.971784983529536*^9, 3.971785066713973*^9}, {3.9717918001804113`*^9, 
+  3.9717918032611337`*^9}},ExpressionUUID->"dd121e0b-2d10-4ba9-929d-\
 c5693520c42d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Chapter 4 ", "Section",
+ CellChangeTimes->{{3.9694380361627445`*^9, 3.9694380625378714`*^9}, {
+   3.970491221708372*^9, 3.970491247637053*^9}, {3.9704912887519307`*^9, 
+   3.9704912896265965`*^9}, 3.9710997632615623`*^9, {3.971781630857814*^9, 
+   3.971781640308318*^9}, {3.9717827792197943`*^9, 3.971782818356186*^9}, {
+   3.97178351938239*^9, 3.971783533270041*^9}, {3.9717900666853943`*^9, 
+   3.971790069229156*^9}},ExpressionUUID->"b7296df1-f779-4d6f-948c-\
+5a6911985db3"],
+
+Cell[TextData[{
+ "Chapter 4 describes how to solve higher order constant coefficient linear \
+ODEs directly without converting them to a system!  The Chapter 4 material \
+matters because it is the way lots of scientists and engineers will talk \
+about simple equations such as\n\t",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"m", " ", 
+      RowBox[{"x", "''"}]}], "+", 
+     RowBox[{"c", " ", 
+      RowBox[{"x", "'"}]}], "+", 
+     RowBox[{"k", " ", "x"}]}], "=", 
+    RowBox[{
+     SubscriptBox["f", "0"], 
+     RowBox[{"sin", "(", 
+      RowBox[{"\[Omega]", " ", "t"}], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "28efdf2a-88b0-4e26-8e32-7101ea67a8ef"],
+ ". \nThis is the standard model for a mass-spring system with mass ",
+ Cell[BoxData[
+  FormBox["m", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4cdd1810-a8c1-45ef-87d2-4e3872c123a5"],
+ ", spring constant ",
+ Cell[BoxData[
+  FormBox["k", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a7a2df7d-4eac-4ff7-9d32-c4f1345ca32b"],
+ ", and linear damping coefficient ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c9407903-8e6a-4f08-b1eb-76c1f69b99ca"],
+ " subject to a sinusoidal (angular frequency ",
+ Cell[BoxData[
+  FormBox["\[Omega]", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e66e603c-4ec6-4771-9829-c9ad76d02ee6"],
+ ") force of ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["f", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3529958e-9fe8-41b6-a667-0989eb4a31f7"],
+ " Newtons.   In the real world, the damping ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3f4ee5a0-c141-4eb5-9430-1ecfee18e3d4"],
+ " is usually small and the angular frequency of the force could be anywhere \
+from slow ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Omega]", 
+    RowBox[{"<<", "1"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a554232b-8d67-4e47-b8e3-c82fdbc284ed"],
+ " to fast ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Omega]", ">>", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2290ed0d-a049-4d42-8c77-a64f90c4ac71"],
+ ".  We will see for the simple model there is a single angular frequency ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a44e7ef1-246b-4452-b947-c64e6c12fc96"],
+ " near which a small force can produce an outsized response. Resonant \
+responses can be disastrous.    "
+}], "Text",
+ CellChangeTimes->{{3.9717841740222187`*^9, 3.9717845403068056`*^9}, {
+  3.9717849906891212`*^9, 3.9717850038801136`*^9}, {3.971785071823305*^9, 
+  3.9717852948915715`*^9}, {3.9717853528332095`*^9, 3.971785440288228*^9}, {
+  3.97178618186799*^9, 3.9717863694596863`*^9}, {3.9717864078279257`*^9, 
+  3.971786545447472*^9}, {3.971791997429885*^9, 
+  3.9717920292676687`*^9}},ExpressionUUID->"bea2f494-f576-4145-871c-\
+c8dfda2b8b98"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -9216,26 +9306,30 @@ Cell[CellGroupData[{
 Cell[493075, 8830, 542, 14, 64, "Input",ExpressionUUID->"101a8c5a-8b33-44e3-b667-d754beb8c3fd"],
 Cell[493620, 8846, 234, 5, 48, "Output",ExpressionUUID->"0ad80a6b-bcd7-4f95-8261-23be25081c57"]
 }, Open  ]],
-Cell[493869, 8854, 2707, 99, 269, "Text",ExpressionUUID->"dd121e0b-2d10-4ba9-929d-c5693520c42d"]
+Cell[493869, 8854, 2626, 95, 269, "Text",ExpressionUUID->"dd121e0b-2d10-4ba9-929d-c5693520c42d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[496613, 8958, 499, 7, 100, "Section",ExpressionUUID->"07f16a39-e961-423b-97f1-9fd6406b713f"],
-Cell[497115, 8967, 174, 3, 52, "Text",ExpressionUUID->"782f0d7d-6378-445a-b2f5-babd11970dd1"],
-Cell[497292, 8972, 409, 7, 48, "ItemNumbered",ExpressionUUID->"468ed44e-91c8-444f-b338-bb874e4add28"],
-Cell[CellGroupData[{
-Cell[497726, 8983, 514, 14, 79, "ItemNumbered",ExpressionUUID->"1b3cb52b-6b40-48a2-ba3f-a5e3e50b173b"],
-Cell[498243, 8999, 169, 3, 39, "SubitemNumbered",ExpressionUUID->"36d27b33-a36a-4667-84f4-137be1bde28e"],
-Cell[498415, 9004, 420, 11, 39, "SubitemNumbered",ExpressionUUID->"19217e2c-2d47-4ea4-a18d-4e0cb40d7a9f"],
-Cell[498838, 9017, 226, 4, 39, "SubitemNumbered",ExpressionUUID->"59d999aa-400c-4c01-82c5-2d785ea908d6"]
+Cell[496532, 8954, 483, 7, 100, "Section",ExpressionUUID->"b7296df1-f779-4d6f-948c-5a6911985db3"],
+Cell[497018, 8963, 3083, 80, 363, "Text",ExpressionUUID->"bea2f494-f576-4145-871c-c8dfda2b8b98"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[499101, 9026, 835, 21, 80, "ItemNumbered",ExpressionUUID->"0da4a72f-4023-4da4-b5b0-b7bc1e2b4832"],
-Cell[499939, 9049, 554, 13, 38, "SubitemNumbered",ExpressionUUID->"dfbb7756-1f07-4c6c-bd66-e3a6bce904b0"],
-Cell[500496, 9064, 762, 22, 39, "SubitemNumbered",ExpressionUUID->"39009caf-e096-4bd5-8293-02028a11a1d9"],
-Cell[501261, 9088, 608, 16, 38, "SubitemNumbered",ExpressionUUID->"1fff4bae-2e92-4108-bead-a829ba2abf3a"]
+Cell[500138, 9048, 499, 7, 100, "Section",ExpressionUUID->"07f16a39-e961-423b-97f1-9fd6406b713f"],
+Cell[500640, 9057, 174, 3, 52, "Text",ExpressionUUID->"782f0d7d-6378-445a-b2f5-babd11970dd1"],
+Cell[500817, 9062, 409, 7, 48, "ItemNumbered",ExpressionUUID->"468ed44e-91c8-444f-b338-bb874e4add28"],
+Cell[CellGroupData[{
+Cell[501251, 9073, 514, 14, 79, "ItemNumbered",ExpressionUUID->"1b3cb52b-6b40-48a2-ba3f-a5e3e50b173b"],
+Cell[501768, 9089, 169, 3, 39, "SubitemNumbered",ExpressionUUID->"36d27b33-a36a-4667-84f4-137be1bde28e"],
+Cell[501940, 9094, 420, 11, 39, "SubitemNumbered",ExpressionUUID->"19217e2c-2d47-4ea4-a18d-4e0cb40d7a9f"],
+Cell[502363, 9107, 226, 4, 39, "SubitemNumbered",ExpressionUUID->"59d999aa-400c-4c01-82c5-2d785ea908d6"]
 }, Open  ]],
-Cell[501884, 9107, 417, 8, 79, "ItemNumbered",ExpressionUUID->"acc4829e-a760-41bd-962f-7b88bb187ca4"],
-Cell[502304, 9117, 418, 8, 121, "Text",ExpressionUUID->"7ec83924-6856-48d0-ab7f-373758633e49"]
+Cell[CellGroupData[{
+Cell[502626, 9116, 835, 21, 80, "ItemNumbered",ExpressionUUID->"0da4a72f-4023-4da4-b5b0-b7bc1e2b4832"],
+Cell[503464, 9139, 554, 13, 38, "SubitemNumbered",ExpressionUUID->"dfbb7756-1f07-4c6c-bd66-e3a6bce904b0"],
+Cell[504021, 9154, 762, 22, 39, "SubitemNumbered",ExpressionUUID->"39009caf-e096-4bd5-8293-02028a11a1d9"],
+Cell[504786, 9178, 608, 16, 38, "SubitemNumbered",ExpressionUUID->"1fff4bae-2e92-4108-bead-a829ba2abf3a"]
+}, Open  ]],
+Cell[505409, 9197, 417, 8, 79, "ItemNumbered",ExpressionUUID->"acc4829e-a760-41bd-962f-7b88bb187ca4"],
+Cell[505829, 9207, 418, 8, 121, "Text",ExpressionUUID->"7ec83924-6856-48d0-ab7f-373758633e49"]
 }, Open  ]]
 }, Open  ]]
 }
