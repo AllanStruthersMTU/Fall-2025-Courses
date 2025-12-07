@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    305065,       7655]
+NotebookDataLength[    305073,       7655]
 NotebookOptionsPosition[    290779,       7388]
-NotebookOutlinePosition[    291637,       7415]
-CellTagsIndexPosition[    291594,       7412]
+NotebookOutlinePosition[    291645,       7415]
+CellTagsIndexPosition[    291602,       7412]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -7390,7 +7390,7 @@ WindowToolbars->{"RulerBar", "MultipurposeBar"},
 WindowSize->{1131, 567},
 WindowMargins->{{Automatic, -1444.5}, {Automatic, -291}},
 PrintingCopies->1,
-PrintingPageRange->{1, Automatic},
+PrintingPageRange->{Automatic, Automatic},
 PrintingOptions->{"Magnification"->1.,
 "PaperOrientation"->"Portrait",
 "PaperSize"->{612, 792}},
